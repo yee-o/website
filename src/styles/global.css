@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f99417;
+  height: 100vh;
+  font-family: 'AR One Sans', sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  font-size: x-large;
+  color: #363062;
+  display: flex;
+  gap: 10px;
+}
+
+.txt {
+  display: block;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-10px) !important;
+  cursor: pointer;
+}
