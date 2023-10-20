@@ -1,12 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #f99417;
   height: 100vh;
-  font-family: 'AR One Sans', sans-serif;
+  font-size: 100%;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background: url('/ai.jpg') no-repeat center;
+  filter: blur(5px) grayscale(0.9);
+}
+
+.name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 10px;
 }
 
 .box {
@@ -15,11 +32,71 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #f5f7f8;
+}
+
+.box div {
+  position: relative;
+  animation: launch 3s ease-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes launch {
+  2% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-250%);
+  }
+}
+
+.box .iconify {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  font-size: larger;
+  animation: hide 3s ease-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes hide {
+  2% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  /* color: hsl(0, 0%, 93%); */
+  color: #072541;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    flex-direction: column;
+    font-size: 3.5rem;
+  }
 }
 
 .content {
   font-size: x-large;
-  color: #363062;
+  color: #192655;
   display: flex;
   gap: 10px;
 }

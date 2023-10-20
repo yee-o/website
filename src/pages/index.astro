@@ -6,12 +6,12 @@ import '../styles/global.css'
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🐶</title>
+    <title>🧑🏼‍🚀</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -21,8 +21,17 @@ import '../styles/global.css'
       referrerpolicy="no-referrer"></script>
   </head>
   <body>
+    <!-- <div class="background"></div> -->
+    <div class="name">neb.wiki</div>
     <main class="box">
-      <div class="content">
+      <!-- <h1>
+        <span>Vison.</span>
+
+        <span>Venture.</span>
+
+        <span>Victory.</span>
+      </h1> -->
+      <!-- <div class="content">
         <span class="txt">12345</span>
         <div class="icon">
           <span
@@ -30,44 +39,49 @@ import '../styles/global.css'
             data-icon="fluent-emoji-flat:turtle"
             data-inline="false"></span>
         </div>
+      </div> -->
+      <div>
+        <img src="/neb-wiki-min-removebg.png" width="200" alt="logo" />
+        <span class="iconify" data-icon="fluent-emoji:fire" data-inline="false"
+        ></span>
       </div>
     </main>
   </body>
 
   <script>
-    const { log, clear } = console
+    // const { log, clear } = console
 
-    const l1 = (param) => {
-      log('🏓', '====>', param)
-    }
+    // const l1 = (param) => {
+    //   log('🏓', '====>', param)
+    // }
 
-    const l2 = (name, value) => {
-      log('🌰', `${name} <- ${value}`)
-    }
+    // const l2 = (name, value) => {
+    //   log('🌰', `${name} <- ${value}`)
+    // }
 
-    const str = `neb.wiki`
+    // const str = `neb.wiki`
 
     // l1(str)
     // l2(Object.keys({ str })[0], str) // ? convert it to a method
 
-    const say = () => {
-      l2(Object.keys({ str })[0], str)
-    }
+    // const say = () => {
+    //   l2(Object.keys({ str })[0], str)
+    // }
 
-    const emoji = document.querySelector('.icon')
-    const txt = document.querySelector('.txt')
+    // const emoji = document.querySelector('.icon')
+    // const txt = document.querySelector('.txt')
 
-    clear()
-    l1(emoji)
+    // clear()
+    // l1(emoji)
 
-    setTimeout(() => {
-      l1(emoji)
-      emoji.style.transform = 'scale(1.5)'
-    }, 1000)
+    // setTimeout(() => {
+    //   l1(emoji)
+    //   emoji.style.transform = 'scale(1.5)'
+    // }, 1000)
 
-    emoji.addEventListener('click', () => {
-      say()
-      txt.textContent = txt.textContent === str ? '12345' : str
-    })
+    // emoji.addEventListener('click', () => {
+    //   say()
+    //   txt.textContent = txt.textContent === str ? '12345' : str
+    // })
   </script>
 </html>
