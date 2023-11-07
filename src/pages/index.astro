@@ -42,9 +42,14 @@ import '../styles/global.css'
     setTimeout(() => {
       const text = document.createElement('div')
       text.classList.add('text')
-      text.textContent =
-        '\u0043 \u006F \u006D \u0069 \u006E \u0067 \u0020 \u0053 \u006F \u006F \u006E'
+
       box.appendChild(text)
+
+      setTimeout(() => {
+        text.textContent =
+          '\u0043 \u006F \u006D \u0069 \u006E \u0067 \u0020 \u0053 \u006F \u006F \u006E'
+        text.classList.add('showMe')
+      }, 288)
     }, 4500)
   </script>
 </html>

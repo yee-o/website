@@ -55,7 +55,7 @@ body {
 
 .box .iconify {
   position: absolute;
-  top: 75%;
+  top: 73%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
   font-size: 1.5rem;
@@ -75,9 +75,27 @@ body {
 }
 
 .text {
-  color: white;
+  color: hsl(0, 0%, 93%);
   font-size: 4rem;
   font-family: 'Linefont';
+  animation: show 5s ease-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.show-text {
+  filter: opacity(1) !important;
+  transition: filter 878ms ease-in;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 h1 {
