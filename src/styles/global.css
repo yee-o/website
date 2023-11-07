@@ -9,20 +9,13 @@ body {
   font-size: 100%;
 }
 
-.background {
-  height: 100%;
-  width: 100%;
-  background: url('/ai.jpg') no-repeat center;
-  filter: blur(5px) grayscale(0.9);
-}
-
 .name {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   padding: 5px 10px;
 }
 
@@ -38,9 +31,10 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   background-color: #f5f7f8;
+  transition: background 1s ease-in-out;
 }
 
-.box div {
+.box div:not(.text) {
   position: relative;
   animation: launch 3s ease-out;
   animation-delay: 1s;
@@ -61,10 +55,10 @@ body {
 
 .box .iconify {
   position: absolute;
-  top: 72%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(180deg);
-  font-size: larger;
+  font-size: 1.5rem;
   animation: hide 3.5s ease-out;
   /* animation-delay: 0.5s; */
   animation-iteration-count: 1;
@@ -78,6 +72,12 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.text {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Linefont';
 }
 
 h1 {

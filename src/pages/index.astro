@@ -6,12 +6,12 @@ import '../styles/global.css'
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🧑🏼‍🚀</title>
+    <title>neb.wiki</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Linefont:wght@200&family=Montserrat:wght@900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -21,73 +21,30 @@ import '../styles/global.css'
       referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <!-- <div class="background"></div> -->
     <div class="name">neb.wiki</div>
     <main class="box">
-      <!-- <h1>
-        <span>Vison.</span>
-
-        <span>Venture.</span>
-
-        <span>Victory.</span>
-      </h1> -->
-      <!-- <div class="content">
-        <span class="txt">12345</span>
-        <div class="icon">
-          <span
-            class="iconify"
-            data-icon="fluent-emoji-flat:turtle"
-            data-inline="false"></span>
-        </div>
-      </div> -->
       <div>
         <img src="/neb-wiki-min-removebg.png" width="200" alt="logo" />
-        <span class="iconify" data-icon="fluent-emoji:fire" data-inline="false"
+        <span class="iconify" data-icon="bytesize:fire" data-inline="false"
         ></span>
       </div>
     </main>
   </body>
 
   <script>
-    // const { log, clear } = console
-
-    // const l1 = (param) => {
-    //   log('🏓', '====>', param)
-    // }
-
-    // const l2 = (name, value) => {
-    //   log('🌰', `${name} <- ${value}`)
-    // }
-
-    // const str = `neb.wiki`
-
-    // l1(str)
-    // l2(Object.keys({ str })[0], str) // ? convert it to a method
-
-    // const say = () => {
-    //   l2(Object.keys({ str })[0], str)
-    // }
-
-    // const emoji = document.querySelector('.icon')
-    // const txt = document.querySelector('.txt')
-
-    // clear()
-    // l1(emoji)
-
-    // setTimeout(() => {
-    //   l1(emoji)
-    //   emoji.style.transform = 'scale(1.5)'
-    // }, 1000)
-
-    // emoji.addEventListener('click', () => {
-    //   say()
-    //   txt.textContent = txt.textContent === str ? '12345' : str
-    // })
+    const box = document.querySelector('.box')
 
     setTimeout(() => {
-      document
-        .querySelector('.box div')
-        .removeChild(document.querySelector('.iconify'))
+      box.removeChild(document.querySelector('.box div'))
+      box.style.background = 'black'
     }, 3500)
+
+    setTimeout(() => {
+      const text = document.createElement('div')
+      text.classList.add('text')
+      text.textContent =
+        '\u0043 \u006F \u006D \u0069 \u006E \u0067 \u0020 \u0053 \u006F \u006F \u006E'
+      box.appendChild(text)
+    }, 4500)
   </script>
 </html>
