@@ -32,17 +32,14 @@ import '../styles/global.css'
   </body>
 
   <script>
-    const box = document.querySelector('.box')
+    const box = document.querySelector('.box') as HTMLDivElement
 
     setTimeout(() => {
       box.removeChild(document.querySelector('.box div'))
       box.style.background = 'black'
-    }, 3500)
 
-    setTimeout(() => {
       const text = document.createElement('div')
       text.classList.add('text')
-
       box.appendChild(text)
 
       setTimeout(() => {
@@ -50,6 +47,6 @@ import '../styles/global.css'
           '\u0043 \u006F \u006D \u0069 \u006E \u0067 \u0020 \u0053 \u006F \u006F \u006E'
         text.classList.add('showMe')
       }, 288)
-    }, 4500)
+    }, 3500)
   </script>
 </html>
